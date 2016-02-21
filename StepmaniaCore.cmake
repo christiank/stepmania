@@ -308,7 +308,7 @@ elseif(MACOSX)
     MAC_FRAME_OPENGL
     MAC_FRAME_QUICKTIME
   )
-elseif(LINUX)
+elseif()
   if(WITH_GTK2)
     find_package("GTK2" 2.0)
     if (${GTK2_FOUND})
