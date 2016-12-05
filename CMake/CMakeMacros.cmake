@@ -1,6 +1,6 @@
 # Borrowed from http://stackoverflow.com/a/3323227/445373
 function(sm_list_replace container index newvalue)
-  list(INSERT ${container} ${index} ${newvalue})
+  list(INSERT "${container}" "${index}" "${newvalue}")
   math(EXPR __INDEX "${index} + 1")
   list(REMOVE_AT ${container} ${__INDEX})
 endfunction()
